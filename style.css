@@ -3,15 +3,22 @@
 }
 
 #main {
-    padding: 100px;
+    padding: 80px;
     margin: 50px;
-    background-color: bisque;
+    background-color: rgb(22, 136, 165);
+    border-radius: 50px;
+    width: 50%;
+    margin: 50px auto;
 }
 
 #display {
     border: 2px solid;
     margin: 20px auto;
     height: 100px;
+    width: 70%;
+    font-size: 70px;
+    text-align: right;
+    padding: 8px;
 }
 
 #button-panel {
@@ -22,7 +29,7 @@
         "seven eight nine multiply"
         "four five six subtract"
         "one two three add"
-        "zero decimal equals add"
+        "zero decimal equals add";
 }
 
 .light-key, .dark-key {
@@ -30,8 +37,11 @@
     justify-content: center;
     align-items: center;
     border: 1px solid;
-    min-height: 50px;
+    min-height: 70px;
+    border-radius: 5px;
+    font-size: 42px;;
 }
+
 .light-key {
     background-color: white;
     color: black;
