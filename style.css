@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    padding: 100px;
+    margin: 50px;
+    background-color: bisque;
+}
+
+#display {
+    border: 2px solid;
+    margin: 20px auto;
+    height: 100px;
+}
+
+#button-panel {
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 
+        "clear clear clear divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero decimal equals add"
+}
+
+.light-key, .dark-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    min-height: 50px;
+}
+.light-key {
+    background-color: white;
+    color: black;
+}
+#zero {
+    grid-area: zero;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#decimal {
+    grid-area: decimal;
+}
+#equals {
+    grid-area: equals;
+}
+
+.dark-key {
+    background-color: black;
+    color: white;
+}
+#add {
+    grid-area: add;
+}
+#subtract {
+    grid-area: subtract;
+}
+#multiply {
+    grid-area: multiply;
+}
+#divide {
+    grid-area: divide;
+}
+#clear {
+    grid-area: clear;
+}
